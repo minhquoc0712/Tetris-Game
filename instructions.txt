@@ -1,0 +1,117 @@
+Note.
+The bulid directory of the project should be the directory that stores the file code
+the the program can read that file for displaying point of past user.
+
+1. Control game.
+
+Start button for start the game. It will be disabled when currently playing and it will
+be enabled when the game is over.
+
+Pause button used for pause the game. It will have no affect when the game has not started.
+This button also used for resume game.
+
+Close button will store the score of player it the player has top 3 score and then close
+the window.
+
+2. Option for play the game.
+
+Automatic: to drop new tetromino immediately after another.
+Manually: to drop new tetromino by pressing button.
+
+The automatic mode and manually mode can be changed when playing and the rule will
+be applied when current tetromino is drop down.
+
+3. Movement of tetromino and tetromino.
+
+Each tetromino has 4 square that has the same color depend on the level playing and also
+associated with information about the bottom index, upper most index, left most index and
+right most index of all 4 square in tetromino used for checking condition in movement of
+the tetromino.
+
+A: move to left.
+D: move to right.
+S: move down six squares.
+C: move to the lowest possible position.
+W: rotate the tetromino counter - clockwise.
+R: reflect the tetromino in vertical direction.
+F: hold current tetromino.
+T or pressing New tetromino button: Start drop new tetromino when playing in manual mode.
+
+4. Grid game.
+
+When a row is fulled, it will be removed and the square above will move down to the lowsest
+removed line.
+
+5. Calculate point.
+
+The player can get points from dropping success a tetromino or get a full line.
+
+Each tetromino drop sucess will get 100 points.
+
+In the process of droping if the user turn tetromino more than three times, then 5 points
+will be minus from 100 points above for each exceed turns, and if the points can drop to
+negative then it will be set to 0.
+
+Each line removed is counted.
+
+If the total line removed from one drop is smaller than 4. Then the player get 1000 points
+for each row remove. If the total line removed is larger or equal to 4 the player get 2000
+points for each row remove also the player get 1 tetris point.
+
+
+6. Level of difficulty.
+
+There is 6 levels in the game. The playing speed is increasing when level up. For each level
+there is a charactistic set of color for tetrominos.
+
+Level 1. 0 point - 5000 points. Move down one square per 0.80 second.
+Level 2. 5000 points - 10000 points. Move down one square per 0.68 second.
+Level 3. 10000 points - 20000 points. Move down one square per 0.56 second.
+Level 4. 20000 points - 30000 points. Move down one square per 0.44 second.
+Level 5. 300000 points - 800000 points. Move down one square per 0.32 second.
+Level 6. From 80000 points. Move down one square per 0.8 second.
+
+
+7. Display incoming tetromino. 
+
+Incoming tetromino is displayed on the window.
+
+
+8. Display hold tetromino.
+
+The hold tetromino is displayed on the window.
+
+
+9. Points display on window.
+
+The score, line removed and tetris point of player is displayed on the window.
+
+
+10. Player name.
+
+The player can enter their name before playing game. If no name is provided the name of
+player will be set to "No name".
+
+11. Scoreboard in window.
+
+The information of previous high score player in stored in a file. When program starts
+the file will be read and then the information will be displayed on the scoreboard.
+
+The scoreboard track the player scores. If player socre is higher than the score
+displayed on the scoreboard then the scoreboard will be updated in real time.
+
+When program closes the information on the scoreboard will be stored to a file.
+
+
+12. Time playing display in window.
+
+The clock display playing time in hour, minute and second.
+
+The clock starts counting when the player press Start button and only stop when the game
+is over. When player pressed Pause and the game is running then the clock is continue
+counting.
+
+13. Messange box.
+
+The player will be informed when the game started and finish or pause. Also other
+information such as player name, playing level or playing mode.	
